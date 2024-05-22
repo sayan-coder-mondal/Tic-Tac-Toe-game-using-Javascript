@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#term{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+    margin-top: 60px;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 70px ;
+}
+.box{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    font-size: 70PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Baloo Bhai 2', cursive;
+    /* cursor: pointer; */
+}
+.box:hover{
+    /* background-color: rgb(183, 255, 255); */
+    cursor: pointer;
+}
+.left{
+    border-left: 0;
+}
+.right{
+    border-right: 0;
+}
+.top{
+    border-top: 0;
+}
+.bottom{
+    border-bottom: 0;
+}
+
+#btn_new_game{
+    display: block;
+    margin: 100px auto 20px;
+    background-color: rgb(59, 59, 255);
+    border: 3px solid black;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media screen and (max-width:500px){
+    #term{
+        font-size: 35px;
+    }
+    #container{
+        margin-top: 50px;
+    }
+    #btn_new_game{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:400px) {
+    .box{
+        width: 80px;
+        height: 80px;
+    }
+}
