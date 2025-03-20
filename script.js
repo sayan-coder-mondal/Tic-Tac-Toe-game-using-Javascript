@@ -78,6 +78,7 @@ function win() {
 function click(num){
     if (term == 'X') {
         document.getElementsByClassName('box')[num].innerText = 'X';
+        document.getElementsByClassName('box')[num].style.color="red";
         document.getElementsByClassName('box')[num].removeAttribute('onclick');
         console.log(x1.innerText)
         term = 'O';
@@ -85,6 +86,7 @@ function click(num){
     }
     else if (term == 'O') {
         document.getElementsByClassName('box')[num].innerText = 'O';
+        document.getElementsByClassName('box')[num].style.color="blue";
         document.getElementsByClassName('box')[num].removeAttribute('onclick');
         term = 'X';
         t.innerText = 'Current Player X';
